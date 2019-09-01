@@ -27,7 +27,7 @@ source .createproject.sh
 Once done successfully, 
 * update createproject.sh with absolute/ relative path to create.py
 * go in Create.py and update app_path, username, password variables
-* update your username inplace of <Github username> in create() function
+* update your github username in create() function
 
 ## Usage
 ```
