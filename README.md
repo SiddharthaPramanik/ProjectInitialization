@@ -1,12 +1,43 @@
 # Create.py
 * Logs into Github using credentials in the script 
-* Creates a new repository using the given name in the CLI
+* Creates a new repository using the given name (& discription) in the CLI
+* Makes changes on local machine, like initializing empty git
 
 # createproject.sh
-* Creates a new directory on local machine
-* Initializes an empty git
-* Creates README.md and .gitignore files
+This is used to invoke the python script once sourced.
 
-## Things you need to update
-* Github credentials in Create.py
-* Github username in createproject.sh
+## Installation
+Execute the following commands :
+
+```
+git clone "https://github.com/SiddharthaPramanik/ProjectInitialization.git"
+```
+
+```
+cd ProjectInitialization
+```
+
+```
+pip install -r requirements.txt
+```
+
+```
+source .createproject.sh 
+```
+Once done successfully, 
+* update createproject.sh with absolute/ relative path to create.py
+* go in Create.py and update app_path, username, password variables
+* update your username inplace of <Github username> in create() function
+
+## Usage
+```
+create <project name> <description>
+```
+Examples:
+```
+create NewProject
+```
+
+```
+create NewProject 'A new project'
+```
